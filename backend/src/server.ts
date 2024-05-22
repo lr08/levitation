@@ -21,8 +21,8 @@ app.use('/api/products', productRoutes);
 app.use('/api/pdf', pdfRoutes);
 
 // MongoDB connection
- const mongoURI: string =  "mongodb://localhost:27017/invoicegenerator";
-//  const mongoURI: string = process.env.MONGO_URI as string;
+// const mongoURI: string =  "mongodb://localhost:27017/invoicegenerator";
+ const mongoURI: string = process.env.MONGO_URI as string;
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
