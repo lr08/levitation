@@ -12,7 +12,7 @@ const Register: React.FC = () => {
     const handleRegister = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/auth/register', { name, email, password });
+            await axios.post('https://invoice-generator-lr-de650915df72.herokuapp.com/api/auth/register', { name, email, password });
             navigate('/login'); // Redirect to Login Page
         } catch (err) {
             setError('Error registering user');

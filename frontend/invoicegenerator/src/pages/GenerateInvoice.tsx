@@ -8,7 +8,7 @@ const GenerateInvoice: React.FC = () => {
     useEffect(() => {
         const fetchInvoice = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/pdf/generate', {
+                const response = await axios.get('https://invoice-generator-lr-de650915df72.herokuapp.com/api/pdf/generate', {
                     responseType: 'blob'
                 });
                 setInvoiceData(response.data);

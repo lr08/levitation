@@ -17,7 +17,7 @@ const AddProducts: React.FC = () => {
 
     const handleSaveProducts = async () => {
         try {
-            await axios.post('http://localhost:5000/api/products/add', products);
+            await axios.post('https://invoice-generator-lr-de650915df72.herokuapp.com/api/products/add', products);
             alert('Products saved successfully!');
         } catch (error) {
             console.error('Error saving products:', error);
